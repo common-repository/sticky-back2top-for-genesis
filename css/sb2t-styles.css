@@ -1,0 +1,87 @@
+/* Genesis Back2Top tags */
+.sb2t {
+	display:inline-block;
+	height:40px;
+	width:40px;
+	position:fixed;
+	bottom:40px;
+	right:10px;
+	box-shadow:0 0 10px rgba(0,0,0,0.05);
+	overflow:hidden;
+	text-indent:100%;
+	white-space:nowrap;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 75%;
+	visibility:hidden;
+	opacity:0;
+	-webkit-transition:all .4s;
+	-moz-transition:all .4s;
+	transition:all .4s;
+	z-index: 9999;
+}
+
+.sb2t a {
+	border-bottom: none;
+
+}
+.sb2t.top-is-visible {
+	visibility:visible;
+	opacity:1;
+}
+
+.sb2t.top-fade-out {
+	opacity:.6;
+}
+
+.sb2t:hover {
+	opacity:1;
+	border-bottom: none;
+}
+
+/*.no-touch .sb2t:hover {
+	background-color:#00468b;
+	opacity:1;
+}*/
+
+@media only screen and (min-width: 768px) {
+	.sb2t {
+		right:20px;
+		bottom:20px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.sb2t {
+		height:60px;
+		width:60px;
+		right:30px;
+		bottom:30px;
+	}
+}
+
+/* Demo Box */
+.sb2t-demo {
+	display:inline-block;
+	height:40px;
+	width:40px;
+	position:fixed;
+	bottom:40px;
+	right:10px;
+	box-shadow:0 0 10px rgba(0,0,0,0.05);
+	overflow:hidden;
+	text-indent:100%;
+	white-space:nowrap;
+	background:rgba(100, 70, 139, 0.8) no-repeat center 50%;
+	-webkit-transition:all .4s;
+	-moz-transition:all .4s;
+	transition:all .4s;
+}
+
+polygon {
+	fill:#FFFFFF;
+}
+
+ellipse {
+	stroke:#FFFFFF;
+}
